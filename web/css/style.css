@@ -1,0 +1,84 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Miso', sans-serif;
+    background-color: #fdde7e;
+}
+
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+img {
+    width: 140px;
+    height: 135px;
+    padding: 20px;
+}
+
+.coffee,
+.gold {
+    display: flex;
+    width: 359px;
+    height: 442px;
+    background-color: #ffffff;
+    align-self: center;
+    flex-direction: column;
+    text-align: center;
+    border: solid 1px #ffffff;
+    border-radius: 2%;
+    margin: 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.coffee__price {
+    color: #02995b;
+    font-size: 70px;
+    text-align: center;
+    font-weight: 700;
+    padding: 20px;
+}
+
+.coffee__name {
+    font-size: 56px;
+    padding: 15px 0 25px 0;
+}
+
+.coffee__font {
+    font-family: 'Lato light', sans-serif;
+    font-size: 22px;
+}
+
+.gold {
+    width: 359px;
+    height: 505px;
+}
+
+.gold__img {
+    padding: 40px 0 0 0;
+}
+
+.coffee:hover,
+.gold:hover {
+    transform: scale(1.03);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    transition: all 0.2s linear;
+}
+
+@font-face {
+    font-family: 'Miso';
+    src: url(../fonts/miso.woff);
+}
+
+@font-face {
+    font-family: 'Lato light';
+    src: url(../fonts/9625.ttf);
+}
